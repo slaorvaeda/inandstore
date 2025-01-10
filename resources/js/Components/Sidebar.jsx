@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-// import { Link, usePage, router } from '@inertiajs/react';
-
+import { Link, usePage, router } from '@inertiajs/react';
 
 const Sidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +32,7 @@ const Sidebar = () => {
                 <nav className="flex-grow p-4">
                     <ul>
                         <li>
-                            <Link to="/main" className="flex items-center p-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded">
+                            <Link href="/main" className="flex items-center p-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded">
                                 <svg className="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 10h11M9 21V3m0 0L21 9M3 10h11" />
                                 </svg>
@@ -42,7 +40,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/inventory" className="flex items-center p-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded">
+                            <Link href="/inventory" className="flex items-center p-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded">
                                 <svg className="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 7l10 10M7 17L17 7" />
                                 </svg>
@@ -50,7 +48,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/transactions" className="flex items-center p-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded">
+                            <Link href="/transactions" className="flex items-center p-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded">
                                 <svg className="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v3m4-3v3m4-3v3m4-3v3M3 10h18M9 21h6" />
                                 </svg>
@@ -58,7 +56,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/customers" className="flex items-center p-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded">
+                            <Link href="/customers" className="flex items-center p-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded">
                                 <svg className="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                 </svg>
@@ -68,7 +66,7 @@ const Sidebar = () => {
                     </ul>
                 </nav>
                 <div className="p-4 border-t border-gray-700">
-                    <Link to="/logout" className="text-gray-300 hover:text-white">Logout</Link>
+                    <Link href="/logout" className="text-gray-300 hover:text-white">Logout</Link>
                 </div>
             </aside>
             <div className="flex-1 sm:ml-64 md:hidden">

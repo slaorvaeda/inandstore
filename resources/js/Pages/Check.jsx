@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Document, Page, Text, View, StyleSheet, Font, PDFDownloadLink } from '@react-pdf/renderer';
 
-import './App.css';
+// import './App.css';
 
 // Styles for PDF (using react-pdf styles)
 const styles = StyleSheet.create({
